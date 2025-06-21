@@ -1,358 +1,386 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YouTube.com Clone</title>
-
+    <title>
+   youtube
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
+     <link rel="stylesheet" href="styles/video.css">
+      <link rel="stylesheet" href="styles/sidebar.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      <div class="left">
+        <img class="menu" src="icons/menu.png">
+        <img class="yt-icon" src="icons/yt2.png">
       </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="icons/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <!-- Put position absolute inside position relative -->
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
+      <div class="middle">
+         <input class="searchbar" type="text" placeholder="Search">
+         <img class="search" src="icons/search.png">
+         <img class="mic" src="icons/mic.png">
       </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="icons/upload.svg">
-          <div class="tooltip">Create</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-          <div class="tooltip">YouTube Apps</div>
-        </div>
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="icons/notifications.svg">
-          <div class="notifications-count">3</div>
-          <div class="tooltip">Notifications</div>
-        </div>
-        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+      <div class="right">
+        <button class="create">
+           &#43; Create  
+        </button>
+         <img class="bell" src="icons/bell.png">
+         <img class="profile" src="icons/profile.jpg">
       </div>
     </header>
 
-    <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="icons/home.svg">
-        <div>Home</div>
+      <nav class="sidebar">
+       <div class="side-link">
+        <img class="home" src="icons/home.png">
+      <div class="name">
+        Home</div>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/explore.svg">
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/subscriptions.svg">
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/originals.svg">
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/youtube-music.svg">
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/library.svg">
-        <div>Library</div>
+       <div class="side-link">
+        <img class="subs"src="icons/shorts.png">
+        <div class="name">Shorts</div>
+       </div>
+       <div class="side-link"><img class="home" src="icons/subscription.png">
+         <div class="name" style="left:5px;">
+        Subscriptions</div>
+       </div>
+       <div class="side-link">
+        <img class="subs"src="icons/pro.png">
+        <div class="name "style="left:25px;">You</div>
+       </div>
+       <div class="side-link">
+       <img class="subs"src="icons/do.png">
+       <div class="name" style="left:12px;">Download</div>
       </div>
     </nav>
-
-    <main>
-      <section class="video-grid">
+<main>
+    <section class="video-container">
+    <div class="video">
+    <div class="video-preview">
+      <div>
+        <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/t1.avif">
+         <div class="video-time">2:09</div>
+      </div>
+      <div class="video-grid">
+      <div class="logo">
+        <img class="profile" src="logos/l1.jpg">
+        </div>
+      <div class="channel-info">
+        <p class="video-title">
+          Sarkaar 5 Promo | Sudigali Sudheer | Aha Original |
+        Premieres 6th June 7PM
+      </p>
+      <p class="channel-name">
+        aha videolN &#10026;
+      </p>
+      <p class="views">
+        564K views • 2 days
+      </p>
+      </div>
+    </div>
+    </div>
+    </div> 
+    </div>
+    <div class="video">
+    <div class="video-preview">
+      <div>
+        <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/t2.avif">
+        <div class="video-time">14:23</div>
+      </div>
+      <div classs="video-grid">
+      <div class="logo">
+        <img class="profile" src="logos/l3.jpg">
+        </div>
+      <div class="channel-info">
+        <p class="video-title">
+          Ghibran's Spiritual Series | Om Namachivaya Om - Lord Shiva
+Song Lyric Video | Ghibran
+      </p>
+      <p class="channel-name">
+        Think Divine &#10026;
+      </p>
+      <p class="views">
+        4.5M views • 4 years ago
+      </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="video">
+    <div class="video-preview">
+      <div>
+        <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/t3.avif">
+        <div class="video-time">4:45</div>
+      </div>
+      <div classs="video-grid">
+      <div class="logo">
+        <img class="profile" src="logos/l2.jpg">
+        </div>
+      <div class="channel-info">
+        <p class="video-title">
+          ANIMAL (Telugu) Ney Veyrey : Ranbir Kapoor, Rashmika M | Karthik,ShreyasP, AnanthaS | Sandeep Reddy V
+      </p>
+      <p class="channel-name">
+        T-Series Telugu &#10026;
+      </p>
+      <p class="views">
+        23M views • 1 year ago
+      </p>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="video">
+    <div class="video-preview">
+      <div>
+        <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/t4.avif">
+        <div class="video-time">2:01:53</div>
+      </div>
+      <div classs="video-grid">
+      <div class="logo">
+        <img class="profile" src="logos/l4.jpg">
+        </div>
+      <div class="channel-info">
+        <p class="video-title">
+          &#128293; &#128293; CINEMA RANGE KANTE EKKUVAA | Telugu
+          Podcast | Raw Talks With VK | #shorts #telugushorts
+      </p>
+      <p class="channel-name">
+        Raw Talks With VK &#10026;
+      </p>
+      <p class="views">
+        231K views • 16 hours ago
+      </p>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div> 
+      <div class="video">
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            <div class="video-time">14:20</div>
+          <div>
+            <div class="thumbnail-row">
+            <img  class="thumbnail" src="thumbnails/t5.avif">
+            <div class="video-time">46:34</div>
           </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+          <div classs="video-grid">
+          <div class="logo">
+            <img class="profile" src="logos/l5.jpg">
             </div>
-            <div class="video-info">
-              <p class="video-title">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-              </p>
-              <p class="video-author">
-                Marques Brownlee
-              </p>
-              <p class="video-stats">
-                3.4M views &#183; 6 months ago
-              </p>
-            </div>
+          <div class="channel-info">
+            <p class="video-title">
+              Sudheer | Rashmi | Pradeep | Aadhi | Varshini | Funny
+              Task All in One | Dhee Champions | ETV Telugu
+          </p>
+          <p class="channel-name">
+            ETV Dhee &#10026;
+          </p>
+          <p class="views">
+            5.3M views • 5 years ago
+          </p>
+          </div>
           </div>
         </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-            <div class="video-time">8:22</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Try Not To Laugh Challenge #9
-              </p>
-              <p class="video-author">
-                Markiplier
-              </p>
-              <p class="video-stats">
-                19M views &#183; 4 years ago
-              </p>
-            </div>
-          </div>
         </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-            <div class="video-time">9:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+        </div> 
+          <div class="video">
+            <div class="video-preview">
+              <div>
+                <div class="thumbnail-row">
+                <img  class="thumbnail" src="thumbnails/t6.avif">
+                <div class="video-time">21:34</div>
+              </div>
+              <div classs="video-grid">
+              <div class="logo">
+                <img class="profile" src="logos/l6.jpg">
+                </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Filmymoji Il Middle Class Madhu || Family Mixture I|
+                   Movie CUT || MCM
+              </p>
+              <p class="channel-name">
+                Filmymoji Shorts &#10026;
+              </p>
+              <p class="views">
+                625K views • 9 days ago
+              </p>
+              </div>
+              </div>
             </div>
-            <div class="video-info">
-              <p class="video-title">
-                Crazy Tik Toks Taken Moments Before DISASTER
-              </p>
-              <p class="video-author">
-                SSSniperWolf
-              </p>
-              <p class="video-stats">
-                12M views &#183; 1 year ago
-              </p>
             </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-            <div class="video-time">22:09</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                The Simplest Math Problem No One Can Solve - Collatz Conjecture
-              </p>
-              <p class="video-author">
-                Veritasium
-              </p>
-              <p class="video-stats">
-                18M views &#183; 4 months ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-            <div class="video-time">11:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Kadane's Algorithm to Maximum Sum Subarray Problem
-              </p>
-              <p class="video-author">
-                CS Dojo
-              </p>
-              <p class="video-stats">
-                519K views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-            <div class="video-time">19:59</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Anything You Can Fit In The Circle I’ll Pay For
-              </p>
-              <p class="video-author">
-                MrBeast
-              </p>
-              <p class="video-stats">
-                141M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
-            <div class="video-time">10:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Why Planes Don't Fly Over Tibet
-              </p>
-              <p class="video-author">
-                RealLifeLore
-              </p>
-              <p class="video-stats">
-                6.6M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
-            <div class="video-time">7:12</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Inside The World's Biggest Passenger Plane
-              </p>
-              <p class="video-author">
-                Tech Vision
-              </p>
-              <p class="video-stats">
-                3.7M views &#183; 10 months ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
-            <div class="video-time">13:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-9.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                The SECRET to Super Human STRENGTH
-              </p>
-              <p class="video-author">
-                ThenX
-              </p>
-              <p class="video-stats">
-                20M views &#183; 3 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
-            <div class="video-time">7:53</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
-              </p>
-              <p class="video-author">
-                Business Insider
-              </p>
-              <p class="video-stats">
-                14M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
-            <div class="video-time">4:10</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-11.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Dubai's Crazy Underwater Train and Other Things #Only in Dubai
-              </p>
-              <p class="video-author">
-                Destination Tips
-              </p>
-              <p class="video-stats">
-                3M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
-            <div class="video-time">4:51</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                What would happen if you didn’t drink water? - Mia Nacamulli
-              </p>
-              <p class="video-author">
-                TED-Ed
-              </p>
-              <p class="video-stats">
-                12M views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+            </div> 
+             
+              <div class="video">
+                <div class="video-preview">
+                  <div>
+                    <div class="thumbnail-row">
+                    <img  class="thumbnail" src="thumbnails/t7.jpg">
+                    <div class="video-time">&#9654;Mix</div>
+                  </div>
+                  <div classs="video-grid">
+                  <div class="channel-info">
+                    <p class="video-title">
+                      Mix - Uyi Amma - Azaad | Aaman D, Rasha Thadanil
+                      Madhubanti Bagchi,Amit Trivedi, Amitabh| Bosco| Abhishe...
+                  <p class="channel-name">
+                    Hariharan, Ajay Devgn, Madhubanti Bagchi, and more
+                  </p>
+                  <p class="views">
+                    Updated today
+                  </p>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div> 
+                 
+                  <div class="video">
+                    <div class="video-preview">
+                      <div>
+                        <div class="thumbnail-row">
+                        <img  class="thumbnail" src="thumbnails/t8.avif">
+                        <div class="video-time">2:11:47</div>
+                      </div>
+                      <div classs="video-grid">
+                      <div class="logo">
+                        <img class="profile" src="logos/l8.jpg">
+                        </div>
+                      <div class="channel-info">
+                        <p class="video-title">
+                          Devils vs Darlings Cricket Match | Sudheer Gaadi
+                          Intlo Deyyam |Dasara Spl Event | 8th October 2019
+                      <p class="channel-name">
+                        etvteluguindia &#10026;
+                      </p>
+                      <p class="views">
+                        7.4M views • 5 years ago
+                      </p>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div> 
+                    
+                      <div class="video">
+                        <div class="video-preview">
+                          <div>
+                            <div class="thumbnail-row">
+                            <img  class="thumbnail" src="thumbnails/t9.avif">
+                            <div class="video-time">4:36</div>
+                          </div>
+                          <div classs="video-grid">
+                          <div class="logo">
+                            <img class="profile" src="logos/l9.jpg">
+                            </div>
+                          <div class="channel-info">
+                            <p class="video-title">
+                              SOMMASILLI POTHUNNAVE PART 2 FULL SONG I KALYAN KEY'S | RAMU RATHOD | DIVYA BHAGAT
+                          </p>
+                          <p class="channel-name">
+                            RATHOD TUNES &#10026;
+                          </p>
+                          <p class="views">
+                            49M views • 2 years ago
+                          </p>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                      
+                      </div>
+                        <div class="video">
+                          <div class="video-preview">
+                            <div>
+                              <div class="thumbnail-row">
+                              <img  class="thumbnail" src="thumbnails/t10.avif">
+                              <div class="video-time">3:32</div>
+                            </div>
+                            <div classs="video-grid">
+                            <div class="logo">
+                              <img class="profile" src="logos/l10.jpg">
+                              </div>
+                            <div class="channel-info">
+                              <p class="video-title">
+                                Aathma Rama ( Extended Version) ft Raghu
+                            </p>
+                            <p class="channel-name">
+                              Raghotham R
+                            </p>
+                            <p class="views">
+                              334K views • 2 weeks ago
+                            </p>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                         
+                          <div class="video">
+                            <div class="video-preview">
+                              <div>
+                                <div class="thumbnail-row">
+                                <img  class="thumbnail" src="thumbnails/t11.avif">
+                                <div class="video-time">1:52</div>
+                              </div>
+                              <div classs="video-grid">
+                              <div class="logo">
+                                <img class="profile" src="logos/l11.jpg">
+                                </div>
+                              <div class="channel-info">
+                                <p class="video-title">
+                                  Suddha Brahma Video Song || Sri Ramadasu Video Songs || Nagarjuna, Sneha || Annapurna Studios
+                              </p>
+                              <p class="channel-name">
+                                Annapurna StudiosRATHOD TUNES &#10026;
+                              </p>
+                              <p class="views">
+                                100M views • 10 years ago
+                              </p>
+                              </div>
+                            </div>
+                            </div>
+                            </div>
+                            
+                            </div>
+                            <div class="video">
+                              <div class="video-preview">
+                                <div>
+                                  <div class="thumbnail-row">
+                                  <img  class="thumbnail" src="thumbnails/t12.avif">
+                                  <div class="video-time">6:32:20</div>
+                                </div>
+                                <div classs="video-grid">
+                                <div class="logo">
+                                  <img class="profile" src="logos/l12.jpg">
+                                  </div>
+                                <div class="channel-info">
+                                  <p class="video-title">
+                                    HTML & CSS Full Course - Beginner to Pro
+                                </p>
+                                <p class="channel-name">
+                                  SuperSimpleDev
+                                </p>
+                                <p class="views">
+                                  15M views • 3 years ago
+                                </p>
+                                </div>
+                              </div>
+                              </div>
+                              </div> 
+                                </div>
+                              </section>
+                                
+                      
+      </main>
   </body>
 </html>
